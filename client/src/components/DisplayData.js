@@ -16,7 +16,7 @@ const Toggle = styled.div`
   justify-content: center;
   margin-top: -1%;
 `;
-class App extends React.Component {
+class DisplayData extends React.Component {
   state = {
     women: []
   };
@@ -52,4 +52,4 @@ class App extends React.Component {
     );
   }
 }
-export default App;
+export default DisplayData;

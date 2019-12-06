@@ -1,9 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import { render } from "@testing-library/react";
+import App from "./App";
+import DisplayData from "./components/DisplayData";
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+test("App renders without crashing", () => {
+  render(<App />);
+});
+
+test("renders Display component", () => {
+  const wrapper = render(<DisplayData />);
+  wrapper.getByText(/world/i);
+});
+test("DisplayData renders without crashing", () => {
+  render(<DisplayData />);
 });

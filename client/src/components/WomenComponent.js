@@ -4,7 +4,7 @@ const WomenComponent = props => {
   return (
     <div>
       <h1>
-        {props.girl.name} from {props.girl.country}
+        {props.girl.name} is from {props.girl.country}
       </h1>
     </div>
   );

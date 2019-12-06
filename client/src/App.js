@@ -12,13 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="dark-mode__toggle">
-        <div
-          onClick={toggleMode}
-          className={darkMode ? "toggle toggled" : "toggle"}
-        />
-      </div>
-      <DisplayData />
+      <DisplayData toggleMode={toggleMode} darkMode={darkMode} />
     </div>
   );
 }

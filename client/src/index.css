@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./bg-img-worldcup.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 code {
@@ -12,8 +15,10 @@ code {
     monospace;
 }
 .dark-mode {
-  color: #fff;
-  background-color: #313843;
+  color: #f08c01;
+  background-image: url(./sec-soccer-img.jpg);
+  background-size: inherit;
+  background-repeat: repeat;
 }
 .dark-mode__toggle {
   background: papayawhip;
@@ -24,7 +29,7 @@ code {
   width: 40px;
 }
 .toggle {
-  background: #f68819;
+  background: #00b5ed;
   border-radius: 50px;
   height: 18px;
   left: 0;
@@ -35,4 +40,8 @@ code {
 
 .toggled {
   left: 18px;
+}
+.item {
+  color: red;
+  display: none;
 }
